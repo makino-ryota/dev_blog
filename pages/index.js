@@ -40,7 +40,7 @@ export default function Home({ allPostsData }) {
       </Head>
       <section className={utilStyle.headingMd}>
         <p>
-          メーカー勤務、研究開発職/画像処理・点群処理エンジニア/Webアプリケーションに興味があり、趣味で遊んでいます
+          メーカー勤務 画像・点群処理エンジニア/趣味でWebアプリ、bot開発等の勉強してます。初心者です。コメント等頂けたら嬉しいです。
         </p>
       </section>
 
