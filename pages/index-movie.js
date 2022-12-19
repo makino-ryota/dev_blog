@@ -3,7 +3,7 @@ import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import Link from "next/link"
 import Layout, { siteTitle } from '../components/Layout'
-
+import Navbar from '../components/Navbar'
 
 import utilStyle from "../styles/utils.module.css";
 import { getPostsData } from "../lib/post";
@@ -38,6 +38,7 @@ export default function Home({ allPostsData }) {
             <Head>
                 <title>{siteTitle}</title>
             </Head>
+            <Navbar />
             <section className={utilStyle.headingMd}>
                 <p>
                     理系学生の学習意欲を掻き立てるような映画大好きです。SF/ファンタジー/ドキュメンタリー等
