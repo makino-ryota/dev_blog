@@ -3,6 +3,7 @@ import Image from 'next/image'
 import styles from "./layout.module.css";
 import utilStyles from "../styles/utils.module.css"
 import Link from "next/link";
+import Navbar from "./Navbar";
 
 const name = "gypsyR";
 export const siteTitle = "gypsyR blog";
@@ -13,6 +14,7 @@ function Layout({ children, home }) {
             <Head>
                 <link rel="icon" href="/favicon.ico" />
             </Head>
+            <Navbar />
             <header className={styles.header}>
                 {home ? (
                     <>
