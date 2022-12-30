@@ -38,7 +38,6 @@ export default function Home({ allPostsData }) {
             <Head>
                 <title>{siteTitle}</title>
             </Head>
-            <Navbar />
             <section className={utilStyle.headingMd}>
                 <p>
                     理系学生の学習意欲を掻き立てるような映画大好きです。SF/ファンタジー/ドキュメンタリー等
@@ -51,7 +50,7 @@ export default function Home({ allPostsData }) {
                     {allPostsData.map(({ id, title, date, thumbnail }) => (
                         <article key={id}>
                             <Link href={`/posts/${id}`}>
-                                <Image
+                                <img
                                     src={`${thumbnail}`}
                                     className={styles.thumbnailImage}
                                 />

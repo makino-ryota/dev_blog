@@ -3,7 +3,7 @@ import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import Link from "next/link"
 import Layout, { siteTitle } from '../components/Layout'
-
+import Navbar from '../components/Navbar'
 
 import utilStyle from "../styles/utils.module.css";
 import { getPostsData } from "../lib/post";
@@ -50,7 +50,7 @@ export default function Home({ allPostsData }) {
                     {allPostsData.map(({ id, title, date, thumbnail }) => (
                         <article key={id}>
                             <Link href={`/posts/${id}`}>
-                                <Image
+                                <img
                                     src={`${thumbnail}`}
                                     className={styles.thumbnailImage}
                                 />

@@ -39,7 +39,6 @@ export default function Home({ allPostsData }) {
       <Head>
         <title>{siteTitle}</title>
       </Head>
-      <Navbar />
       <section className={utilStyle.headingMd}>
         <p>
           AIやブロックチェーンの技術動向を追ってます。
@@ -52,7 +51,7 @@ export default function Home({ allPostsData }) {
           {allPostsData.map(({ id, title, date, thumbnail }) => (
             <article key={id}>
               <Link href={`/posts/${id}`}>
-                <Image
+                <img
                   src={`${thumbnail}`}
                   className={styles.thumbnailImage}
                 />

@@ -3,10 +3,11 @@ import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import Link from "next/link"
 import Layout, { siteTitle } from '../components/Layout'
-
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import utilStyle from "../styles/utils.module.css";
 import { getPostsData } from "../lib/post";
+import Navbar from '../components/Navbar'
 
 // SSGの場合 非同期　getStaticPropsはnextjsが用意した関数
 // 外部から一度だけデータを取ってくる
@@ -50,7 +51,7 @@ export default function Home({ allPostsData }) {
           {allPostsData.map(({ id, title, date, thumbnail }) => (
             <article key={id}>
               <Link href={`/posts/${id}`}>
-                <Image
+                <img
                   src={`${thumbnail}`}
                   className={styles.thumbnailImage}
                 />

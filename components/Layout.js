@@ -1,5 +1,5 @@
 import Head from "next/head";
-import Image from 'next/image'
+//import Image from 'next/image'
 import styles from "./layout.module.css";
 import utilStyles from "../styles/utils.module.css"
 import Link from "next/link";
@@ -18,14 +18,14 @@ function Layout({ children, home }) {
             <header className={styles.header}>
                 {home ? (
                     <>
-                        <Image src="/images/profileCat72.jpg"
+                        <img src="/images/profileCat72.jpg"
                             className={`${utilStyles.borderCircle} ${styles.headerHomeImage}`}
                         />
                         <h1 className={utilStyles.heading2Xl}>{name}</h1>
                     </>
                 ) : (
                     <>
-                        <Image src="/images/profileCat72.jpg"
+                        <img src="/images/profileCat72.jpg"
                             className={`${utilStyles.borderCircle}`}
                         />
                         <h1 className={utilStyles.heading2Xl}>{name}</h1>
