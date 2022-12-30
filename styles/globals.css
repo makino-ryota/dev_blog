@@ -26,3 +26,27 @@ img {
   max-width: 100%;
   display: block;
 }
+
+nav {
+  display: flex;
+  font-size: large;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  background-color: rgb(145, 98, 98);
+  gap: 100px
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  transition: all 0.3s;
+}
+
+nav a:hover {
+  color: cadetblue;
+}
+
+nav a svg {
+  margin-left: 5px;
+}

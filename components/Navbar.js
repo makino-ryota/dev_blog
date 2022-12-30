@@ -3,7 +3,7 @@ import React from 'react'
 
 const Navbar = () => {
     return (
-        <nav>
+        <nav >
             <Link href="/">ホーム</Link>
             <Link href="/index-tech">Tech</Link>
             <Link href="/index-movie">映画</Link>
