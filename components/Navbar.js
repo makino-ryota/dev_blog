@@ -5,9 +5,9 @@ const Navbar = () => {
     return (
         <nav >
             <Link href="/">ホーム</Link>
-            <Link href="/index-tech">Tech-未実装-</Link>
-            <Link href="/index-movie">映画-未実装-</Link>
-            <Link href="/index-traveling">旅行-未実装-</Link>
+            <Link href="/index-web3">Web3</Link>
+            <Link href="/index-movie">映画・本</Link>
+            <Link href="/index-life">LIFE</Link>
         </nav>
     )
 }
