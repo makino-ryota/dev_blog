@@ -40,22 +40,22 @@ export default function Home({ allPostsData }) {
             </Head>
             <section className={utilStyle.headingMd}>
                 <p>
-                    理系学生の学習意欲を掻き立てるような映画大好きです。SF/ファンタジー/ドキュメンタリー等
+                    映画・ドラマ（SF/ファンタジー/ホラーetc）と本の記録。
                 </p>
             </section>
 
             <section>
-                <h2>📝理系学生におすすめの映画ブログ</h2>
+                <h2>📝映画・本の記録</h2>
                 <div className={styles.grid}>
                     {allPostsData.map(({ id, title, date, thumbnail }) => (
                         <article key={id}>
-                            <Link href={`/posts/${id}`}>
+                            <Link href={`/posts_movie/${id}`}>
                                 <img
                                     src={`${thumbnail}`}
                                     className={styles.thumbnailImage}
                                 />
                             </Link>
-                            <Link href={`/posts/${id}`}>
+                            <Link href={`/posts_movie/${id}`}>
                                 <p className={utilStyle.boldText}>{title}</p>
                             </Link>
                             <br />
