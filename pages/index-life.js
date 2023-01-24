@@ -6,7 +6,7 @@ import Layout, { siteTitle } from '../components/Layout'
 import Navbar from '../components/Navbar'
 
 import utilStyle from "../styles/utils.module.css";
-import { getPostsData } from "../lib/post";
+import { getPostsData } from "../lib/postlife";
 
 // SSGの場合 非同期　getStaticPropsはnextjsが用意した関数
 // 外部から一度だけデータを取ってくる

@@ -6,7 +6,7 @@ import Layout, { siteTitle } from '../components/Layout'
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import utilStyle from "../styles/utils.module.css";
-import { getPostsData } from "../lib/post";
+import { getPostsData } from "../lib/postweb3";
 import Navbar from '../components/Navbar'
 
 // SSGの場合 非同期　getStaticPropsはnextjsが用意した関数
@@ -41,7 +41,7 @@ export default function Home({ allPostsData }) {
       </Head>
       <section className={utilStyle.headingMd}>
         <p>
-          AIやブロックチェーンの技術動向を追ってます。
+          LIFE
         </p>
       </section>
 
