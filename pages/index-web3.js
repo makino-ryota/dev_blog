@@ -50,13 +50,13 @@ export default function Home({ allPostsData }) {
         <div className={styles.grid}>
           {allPostsData.map(({ id_web3, title, date, thumbnail }) => (
             <article key={id_web3}>
-              <Link href={`/posts/${id_web3}`}>
+              <Link href={`/posts_web3/${id_web3}`}>
                 <img
                   src={`${thumbnail}`}
                   className={styles.thumbnailImage}
                 />
               </Link>
-              <Link href={`/posts/${id_web3}`}>
+              <Link href={`/posts_web3/${id_web3}`}>
                 <p className={utilStyle.boldText}>{title}</p>
               </Link>
               <br />
