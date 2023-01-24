@@ -49,13 +49,13 @@ export default function Home({ allPostsData }) {
                 <div className={styles.grid}>
                     {allPostsData.map(({ id, title, date, thumbnail }) => (
                         <article key={id}>
-                            <Link href={`/posts_movie/${id}`}>
+                            <Link href={`/posts/${id}`}>
                                 <img
                                     src={`${thumbnail}`}
                                     className={styles.thumbnailImage}
                                 />
                             </Link>
-                            <Link href={`/posts_movie/${id}`}>
+                            <Link href={`/posts/${id}`}>
                                 <p className={utilStyle.boldText}>{title}</p>
                             </Link>
                             <br />

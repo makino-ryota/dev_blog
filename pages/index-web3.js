@@ -6,14 +6,14 @@ import Layout, { siteTitle } from '../components/Layout'
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import utilStyle from "../styles/utils.module.css";
-import { getPostsData } from "../lib/post";
+import { getPostsData } from "../lib/postweb3";
 import Navbar from '../components/Navbar'
 
 // SSGの場合 非同期　getStaticPropsはnextjsが用意した関数
 // 外部から一度だけデータを取ってくる
 export async function getStaticProps() {
-  // idとメタデータ各種格納
-  const allPostsData = getPostsData(); //id, title, date, thumbnail
+  // id_web3とメタデータ各種格納
+  const allPostsData = getPostsData(); //id_web3, title, date, thumbnail
   console.log(allPostsData);
 
   return {
@@ -24,7 +24,7 @@ export async function getStaticProps() {
 }
 
 // SSRの場合
-// export async function getServerSideProps(context){
+// export async function getServerSid_web3eProps(context){
 //   return {
 //     props:{
 //       //コンポーネントに渡すためのprops
@@ -41,22 +41,22 @@ export default function Home({ allPostsData }) {
       </Head>
       <section className={utilStyle.headingMd}>
         <p>
-          AIやブロックチェーンの技術動向を追ってます。
+          web3
         </p>
       </section>
 
       <section>
         <h2>📝ブロックチェーン関連</h2>
         <div className={styles.grid}>
-          {allPostsData.map(({ id, title, date, thumbnail }) => (
-            <article key={id}>
-              <Link href={`/posts_web3/${id}`}>
+          {allPostsData.map(({ id_web3, title, date, thumbnail }) => (
+            <article key={id_web3}>
+              <Link href={`/posts_web3/${id_web3}`}>
                 <img
                   src={`${thumbnail}`}
                   className={styles.thumbnailImage}
                 />
               </Link>
-              <Link href={`/posts_web3/${id}`}>
+              <Link href={`/posts_web3/${id_web3}`}>
                 <p className={utilStyle.boldText}>{title}</p>
               </Link>
               <br />

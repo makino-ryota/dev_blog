@@ -1,6 +1,6 @@
 ---
-title: "diary#1 ブログの方針"
-date: "2022-12-11"
+title: "星の王子様"
+date: "2023-1-23"
 thumbnail: "/images/thumbnail04.jpg"
 ---
 # 星の王子様
