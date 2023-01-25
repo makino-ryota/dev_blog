@@ -6,7 +6,7 @@ import Layout, { siteTitle } from '../components/Layout'
 import Navbar from '../components/Navbar'
 
 import utilStyle from "../styles/utils.module.css";
-import { getPostsData } from "../lib/post";
+import { getPostsData } from "../lib/posthobby";
 
 // SSGの場合 非同期　getStaticPropsはnextjsが用意した関数
 // 外部から一度だけデータを取ってくる
@@ -47,15 +47,15 @@ export default function Home({ allPostsData }) {
             <section>
                 <h2>📝映画・本の記録</h2>
                 <div className={styles.grid}>
-                    {allPostsData.map(({ id, title, date, thumbnail }) => (
-                        <article key={id}>
-                            <Link href={`/posts/${id}`}>
+                    {allPostsData.map(({ id_hobby, title, date, thumbnail }) => (
+                        <article key={id_hobby}>
+                            <Link href={`/posts_hobby/${id_hobby}`}>
                                 <img
                                     src={`${thumbnail}`}
                                     className={styles.thumbnailImage}
                                 />
                             </Link>
-                            <Link href={`/posts/${id}`}>
+                            <Link href={`/posts_hobby/${id_hobby}`}>
                                 <p className={utilStyle.boldText}>{title}</p>
                             </Link>
                             <br />
