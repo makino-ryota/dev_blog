@@ -14,7 +14,9 @@ function Layout({ children, home }) {
             <Head>
                 <link rel="icon" href="/favicon.ico" />
             </Head>
-            <Navbar />
+            <div>
+                <Navbar />
+            </div>
             <header className={styles.header}>
                 {home ? (
                     <>
