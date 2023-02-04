@@ -41,7 +41,7 @@ export default function Home({ allPostsData }) {
       </Head>
       <section className={utilStyle.headingMd}>
         <p>
-          web3
+          ICP, BTC, Lightning Network, zkプロダクトetc
         </p>
       </section>
 
@@ -50,13 +50,13 @@ export default function Home({ allPostsData }) {
         <div className={styles.grid}>
           {allPostsData.map(({ id_web3, title, date, thumbnail }) => (
             <article key={id_web3}>
-              <Link href={`/posts_web3/${id_web3}`}>
+              {/* <Link href={`/posts_web3/${id_web3}`}>
                 <img
                   src={`${thumbnail}`}
                   className={styles.thumbnailImage}
                 />
-              </Link>
-              <Link href={`/posts_web3/${id_web3}`}>
+              </Link> */}
+              <Link href={`/posts_web3/${id_web3}`} className={utilStyle.articleDiv}>
                 <p className={utilStyle.boldText}>{title}</p>
               </Link>
               <br />
