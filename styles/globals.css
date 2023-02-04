@@ -75,12 +75,3 @@ nav a:hover {
 nav a svg {
   margin-left: 5px;
 }
-
-article {
-  background-color: rgb(185, 227, 238);
-  margin-left: 5%;
-  margin-right: 10%;
-  box-shadow: 2px 2px 8px #999;
-  padding-left: 5%;
-  padding-bottom: 2%;
-}

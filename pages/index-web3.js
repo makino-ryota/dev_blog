@@ -49,14 +49,14 @@ export default function Home({ allPostsData }) {
         <h2>📝ブロックチェーン関連</h2>
         <div className={styles.grid}>
           {allPostsData.map(({ id_web3, title, date, thumbnail }) => (
-            <article key={id_web3}>
+            <article key={id_web3} className={utilStyle.articleDiv}>
               {/* <Link href={`/posts_web3/${id_web3}`}>
                 <img
                   src={`${thumbnail}`}
                   className={styles.thumbnailImage}
                 />
               </Link> */}
-              <Link href={`/posts_web3/${id_web3}`} className={utilStyle.articleDiv}>
+              <Link href={`/posts_web3/${id_web3}`} className={utilStyle.articleTitle}>
                 <p className={utilStyle.boldText}>{title}</p>
               </Link>
               <br />
