@@ -49,14 +49,14 @@ export default function Home({ allPostsData }) {
         <h2>📝開発日記</h2>
         <div className={styles.grid}>
           {allPostsData.map(({ id, title, date, thumbnail }) => (
-            <article key={id}>
+            <article key={id} className={utilStyle.articleDiv}>
               {/* <Link href={`/posts/${id}`}>
                 <img
                   src={`${thumbnail}`}
                   className={styles.thumbnailImage}
                 />
               </Link> */}
-              <Link href={`/posts/${id}`} className={utilStyle.articleDiv}>
+              <Link href={`/posts/${id}`} className={utilStyle.articleTitle}>
                 <p className={utilStyle.boldText}>{title}</p>
               </Link>
               <br />
