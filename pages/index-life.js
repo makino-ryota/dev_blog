@@ -55,7 +55,7 @@ export default function Home({ allPostsData }) {
                                     className={styles.thumbnailImage}
                                 />
                             </Link> */}
-                            <Link href={`/posts_life/${id_life}`}>
+                            <Link href={`/posts_life/${id_life}`} className={utilStyle.articleDiv}>
                                 <p className={utilStyle.boldText}>{title}</p>
                             </Link>
                             <br />

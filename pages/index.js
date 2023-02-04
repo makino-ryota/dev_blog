@@ -41,12 +41,12 @@ export default function Home({ allPostsData }) {
       </Head>
       <section className={utilStyle.headingMd}>
         <p>
-          メーカー勤務 画像・点群処理エンジニア/趣味でWebアプリ、bot開発等の勉強してます。初心者です。コメント等頂けたら嬉しいです。
+          メーカー勤務 ビジョン系→ロボットエンジニア/趣味でWebアプリ、bot開発等。よろしくお願いします。
         </p>
       </section>
 
       <section>
-        <h2>📝エンジニアのブログ</h2>
+        <h2>📝開発日記</h2>
         <div className={styles.grid}>
           {allPostsData.map(({ id, title, date, thumbnail }) => (
             <article key={id}>
@@ -56,7 +56,7 @@ export default function Home({ allPostsData }) {
                   className={styles.thumbnailImage}
                 />
               </Link> */}
-              <Link href={`/posts/${id}`}>
+              <Link href={`/posts/${id}`} className={utilStyle.articleDiv}>
                 <p className={utilStyle.boldText}>{title}</p>
               </Link>
               <br />
