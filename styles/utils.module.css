@@ -78,11 +78,11 @@
   flex-direction: column;
   justify-content: left;
   align-items: center;
-  transition: all 0.3s;
-  cursor: pointer;
+  /* transition: all 0.3s;
+  cursor: pointer; */
 }
 
-.articleTitle:hover {
+/* .articleTitle:hover {
   transform: translate(1px, 2px);
   box-shadow: none;
-}
+} */
