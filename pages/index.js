@@ -47,7 +47,7 @@ export default function Home({ allPostsData }) {
 
       <section>
         <h2>📝開発日記</h2>
-        <div className={styles.grid}>
+        <div className={styles.articleLine}>
           {allPostsData.map(({ id, title, date, thumbnail }) => (
             <article key={id} className={utilStyle.articleDiv}>
               {/* <Link href={`/posts/${id}`}>
@@ -56,13 +56,17 @@ export default function Home({ allPostsData }) {
                   className={styles.thumbnailImage}
                 />
               </Link> */}
-              <Link href={`/posts/${id}`} className={utilStyle.articleTitle}>
-                <p className={utilStyle.boldText}>{title}</p>
-              </Link>
-              <br />
-              <small className={utilStyle.lightText}>
-                {date}
-              </small>
+              <div>
+                <Link href={`/posts/${id}`} className={utilStyle.articleTitle}>
+                  <p className={utilStyle.boldText}>{title}</p>
+                </Link>
+              </div>
+              <div>
+                <small className={utilStyle.lightText}>
+                  {date}
+                </small>
+              </div>
+              
             </article>
           ))}
         </div>
