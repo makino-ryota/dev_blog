@@ -26,7 +26,7 @@
   box-shadow: none;
 }
 
-.grid {
+/* .grid {
   display: grid;
   flex-wrap: wrap;
   max-width: 1200px;
@@ -34,4 +34,13 @@
   margin: 0 auto;
   grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
   grid-template-rows: repeat(auto-fit, minmax(20px, 1fr));
+} */
+
+.articleLine {
+  display: grid;
+  flex-direction: column;
+  margin: 0 auto;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(auto-fit, minmax(20px, 1fr));
+  gap: 20px; /* 行と列の間隔 */
 }

@@ -21,10 +21,11 @@ const Navbar = () => {
     // メモ　
     return (
         <nav className={isMobile ? 'mobile' : 'desktop'}>
-            <Link href="/">HOME（DEV）</Link>
-            <Link href="/index-web3">Web3</Link>
-            <Link href="/index-hobby">MOVIE/BOOK</Link>
-            <Link href="/index-life">LIFE</Link>
+            <Link href="/">DEV</Link>
+            <Link href="/index-web3">Bot</Link>
+            {/* <Link href="/index-web3">Web3</Link> */}
+            <Link href="/index-hobby">LIFE</Link>
+            {/* <Link href="/index-life">LIFE</Link> */}
         </nav>
     )
 }
