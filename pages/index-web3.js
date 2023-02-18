@@ -47,7 +47,7 @@ export default function Home({ allPostsData }) {
 
       <section>
         <h2>📝ブロックチェーン関連</h2>
-        <div className={styles.grid}>
+        <div className={styles.articleLine}>
           {allPostsData.map(({ id_web3, title, date, thumbnail }) => (
             <article key={id_web3} className={utilStyle.articleDiv}>
               {/* <Link href={`/posts_web3/${id_web3}`}>

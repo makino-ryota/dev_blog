@@ -46,7 +46,7 @@ export default function Home({ allPostsData }) {
 
             <section>
                 <h2>📝映画・本の記録</h2>
-                <div className={styles.grid}>
+                <div className={styles.articleLine}>
                     {allPostsData.map(({ id_hobby, title, date, thumbnail }) => (
                         <article key={id_hobby} className={utilStyle.articleDiv}>
                             {/* <Link href={`/posts_hobby/${id_hobby}`}>

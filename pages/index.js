@@ -56,17 +56,12 @@ export default function Home({ allPostsData }) {
                   className={styles.thumbnailImage}
                 />
               </Link> */}
-              <div>
                 <Link href={`/posts/${id}`} className={utilStyle.articleTitle}>
                   <p className={utilStyle.boldText}>{title}</p>
                 </Link>
-              </div>
-              <div>
                 <small className={utilStyle.lightText}>
                   {date}
                 </small>
-              </div>
-              
             </article>
           ))}
         </div>
