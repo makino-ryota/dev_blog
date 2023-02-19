@@ -58,7 +58,7 @@ export default function Home({ allPostsData }) {
                             <Link href={`/posts_hobby/${id_hobby}`} className={utilStyle.articleTitle}>
                                 <p className={utilStyle.boldText}>{title}</p>
                             </Link>
-                            <br />
+                            {/* <br /> */}
                             <small className={utilStyle.lightText}>
                                 {date}
                             </small>

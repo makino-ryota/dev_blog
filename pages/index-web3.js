@@ -59,7 +59,7 @@ export default function Home({ allPostsData }) {
               <Link href={`/posts_web3/${id_web3}`} className={utilStyle.articleTitle}>
                 <p className={utilStyle.boldText}>{title}</p>
               </Link>
-              <br />
+              {/* <br /> */}
               <small className={utilStyle.lightText}>
                 {date}
               </small>
