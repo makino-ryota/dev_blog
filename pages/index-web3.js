@@ -41,12 +41,12 @@ export default function Home({ allPostsData }) {
       </Head>
       <section className={utilStyle.headingMd}>
         <p>
-          ICP, BTC, Lightning Network, zkプロダクトetc
+          自分用メモです。
         </p>
       </section>
 
       <section>
-        <h2>📝ブロックチェーン関連</h2>
+        <h2>📝振り返り用</h2>
         <div className={styles.articleLine}>
           {allPostsData.map(({ id_web3, title, date, thumbnail }) => (
             <article key={id_web3} className={utilStyle.articleDiv}>
