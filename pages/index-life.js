@@ -40,7 +40,7 @@ export default function Home({ allPostsData }) {
             </Head>
             <section className={utilStyle.headingMd}>
                 <p>
-                    キャリアプラン、人生、もろもろどうするか・・・
+                    人生
                 </p>
             </section>
 
